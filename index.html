@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nostalgia 12" · Vinilos</title>
+  <meta name="description" content="Tienda de vinilos Nostalgia 12 pulgadas: discos revisados, calificados y listos para sonar.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23111'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23e8572a'/%3E%3Ccircle cx='16' cy='16' r='1.2' fill='%23f3ead8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="envoltura top">
+    <a class="marca" href="index.html"><span class="mini-disco" aria-hidden="true"></span>Nostalgia 12"</a>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#estado">Cómo calificamos</a>
+      <a class="ig" target="_blank" rel="noopener">Instagram</a>
+      <a class="fb" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="envoltura hero">
+      <div>
+        <p class="kicker">● Tienda de vinilos · Lado A</p>
+        <h1>Música que se toca <em>con las manos.</em></h1>
+        <p>Discos con historia, revisados surco por surco. Escanea el QR de la funda y conoce su estado, su prensaje y cada canción antes de bajar la aguja.</p>
+        <div class="acciones">
+          <a class="boton" href="#catalogo">Ver catálogo ↓</a>
+          <a class="boton claro dm" target="_blank" rel="noopener">Escríbenos por Instagram</a>
+        </div>
+      </div>
+      <div class="escena" id="hero-disco" aria-label="Disco de vinilo en 3D de Nostalgia 12 pulgadas">
+        <span class="pista">↔ arrastra el disco</span>
+      </div>
+    </div>
+
+    <div class="cinta" aria-hidden="true"><div id="cinta"></div></div>
+
+    <section id="catalogo" class="envoltura">
+      <div class="titulo-seccion">
+        <h2>En la bandeja</h2>
+        <small id="conteo"></small>
+      </div>
+      <div class="grilla" id="grilla"></div>
+    </section>
+
+    <section id="estado" class="envoltura">
+      <div class="titulo-seccion">
+        <h2>Cómo calificamos</h2>
+        <small>Escala Goldmine</small>
+      </div>
+      <div class="escala">
+        <div><b>M</b><p><strong>Mint.</strong> Nuevo, sellado o sin tocar.</p></div>
+        <div><b>NM</b><p><strong>Near Mint.</strong> Casi perfecto. Brilla como el primer día.</p></div>
+        <div><b>VG+</b><p><strong>Very Good Plus.</strong> Marcas leves que no se escuchan.</p></div>
+        <div><b>VG</b><p><strong>Very Good.</strong> Algo de ruido de superficie en pasajes suaves.</p></div>
+        <div><b>G</b><p><strong>Good.</strong> Suena completo, con crujido constante. Precio de rescate.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="envoltura">
+      <span>© Nostalgia 12" · Hecho con surcos</span>
+      <span><a class="ig" target="_blank" rel="noopener">Instagram</a> · <a class="fb" target="_blank" rel="noopener">Facebook</a> · <a href="qr.html">Imprimir QR</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="vinilos.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.querySelectorAll('.ig').forEach(a => (a.href = MARCA.instagram));
+    document.querySelectorAll('.fb').forEach(a => (a.href = MARCA.facebook));
+    document.querySelector('.dm').href = MARCA.mensaje;
+
+    const frase = 'LADO A<span>●</span>33⅓ RPM<span>●</span>12 PULGADAS<span>●</span>LADO B<span>●</span>45 RPM<span>●</span>BAJA LA AGUJA<span>●</span>';
+    document.getElementById('cinta').innerHTML = frase.repeat(6);
+
+    const disponibles = VINILOS.filter(v => !v.vendido).length;
+    document.getElementById('conteo').textContent = `${disponibles} disponibles · ${VINILOS.length} discos`;
+    document.getElementById('grilla').innerHTML = VINILOS.map(v => `
+      <a class="card" href="vinilo.html?id=${encodeURIComponent(v.id)}" style="--c:${v.color};--t:${tintaPara(v.color)}">
+        <div class="funda">
+          <div class="disco-css"></div>
+          <div class="portada">${v.foto ? `<img src="${v.foto}" alt="Portada de ${v.titulo}" loading="lazy">` : `<span>${v.titulo}</span>`}</div>
+          ${v.vendido ? '<b class="sticker">Vendido</b>' : ''}
+        </div>
+        <div class="info">
+          <small>${v.artista}</small>
+          <h3>${v.titulo}</h3>
+          <p>${v.anio} · ${v.genero} · <span class="chip" title="Estado del disco">${v.estado.disco}</span></p>
+          <strong>${precio(v.precio)}</strong>
+        </div>
+      </a>`).join('');
+
+    disco3d(document.getElementById('hero-disco'), {
+      artista: 'Nostalgia', titulo: '12 pulgadas', color: '#e8572a', anio: '',
+      ladoA: Array(5), ladoB: Array(5),
+    });
+  </script>
+</body>
+</html>

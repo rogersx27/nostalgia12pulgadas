@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinilo · Nostalgia 12"</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23111'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23e8572a'/%3E%3Ccircle cx='16' cy='16' r='1.2' fill='%23f3ead8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="envoltura top">
+    <a class="marca" href="index.html"><span class="mini-disco" aria-hidden="true"></span>Nostalgia 12"</a>
+    <nav><a href="index.html#catalogo">← Volver al catálogo</a></nav>
+  </header>
+
+  <main class="envoltura" id="contenido"></main>
+
+  <footer>
+    <div class="envoltura">
+      <span>© Nostalgia 12" · Hecho con surcos</span>
+      <span><a class="ig" target="_blank" rel="noopener">Instagram</a> · <a class="fb" target="_blank" rel="noopener">Facebook</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="vinilos.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.querySelectorAll('.ig').forEach(a => (a.href = MARCA.instagram));
+    document.querySelectorAll('.fb').forEach(a => (a.href = MARCA.facebook));
+
+    const id = new URLSearchParams(location.search).get('id');
+    const v = VINILOS.find(x => x.id === id);
+    const main = document.getElementById('contenido');
+
+    if (!v) {
+      main.innerHTML = `<section><h1>Este disco no está en la bandeja.</h1><p style="margin-top:16px"><a class="boton" href="index.html#catalogo">Ver el catálogo</a></p></section>`;
+    } else {
+      document.title = `${v.artista} – ${v.titulo} · Nostalgia 12"`;
+      const lista = canciones => `<ol>${(canciones || []).map(c => `<li>${c}</li>`).join('')}</ol>`;
+      main.innerHTML = `
+        <div class="detalle">
+          <div>
+            <div class="escena" id="disco" aria-label="${v.titulo} en 3D"><span class="pista">↔ arrastra para girar</span></div>
+            <div class="rpm" role="group" aria-label="Velocidad">
+              <button data-rpm="33.333">33⅓</button><button data-rpm="45">45</button><button data-rpm="0">❚❚</button>
+            </div>
+          </div>
+          <article>
+            <p class="kicker">Cat. ${v.id.toUpperCase()}${v.vendido ? ' · Vendido' : ''}</p>
+            <h1>${v.titulo}</h1>
+            <p class="artista">${v.artista}</p>
+            <dl class="ficha">
+              <dt>Año</dt><dd>${v.anio}</dd>
+              <dt>Sello</dt><dd>${v.sello}</dd>
+              <dt>Prensaje</dt><dd>${v.prensaje}</dd>
+              <dt>Género</dt><dd>${v.genero}</dd>
+              <dt>Disco</dt><dd><span class="chip">${v.estado.disco}</span></dd>
+              <dt>Portada</dt><dd><span class="chip">${v.estado.portada}</span> <a href="index.html#estado" style="font-size:13px">¿qué significa?</a></dd>
+            </dl>
+            <p class="precio">${precio(v.precio)}</p>
+            <div class="acciones" style="margin-top:0">
+              <a class="boton" href="${MARCA.mensaje}" target="_blank" rel="noopener" ${v.vendido ? 'aria-disabled="true"' : ''}>${v.vendido ? 'Vendido' : 'Lo quiero · escríbenos'}</a>
+              <a class="boton claro" href="${MARCA.facebook}" target="_blank" rel="noopener">Facebook</a>
+            </div>
+            <p style="margin-top:10px;font-size:14px;color:var(--gris)">Menciona el código <b class="mono">${v.id.toUpperCase()}</b> en tu mensaje.</p>
+            <p style="margin-top:28px">${v.descripcion}</p>
+            <div class="lados">
+              <div><h3>Lado A</h3>${lista(v.ladoA)}</div>
+              <div><h3>Lado B</h3>${lista(v.ladoB)}</div>
+            </div>
+          </article>
+        </div>`;
+
+      disco3d(document.getElementById('disco'), v).then(ctrl => {
+        const botones = document.querySelectorAll('.rpm button');
+        const marcar = () => botones.forEach(b => b.setAttribute('aria-pressed', +b.dataset.rpm === ctrl.rpm));
+        botones.forEach(b => b.addEventListener('click', () => { ctrl.rpm = +b.dataset.rpm; marcar(); }));
+        marcar();
+      });
+    }
+  </script>
+</body>
+</html>
