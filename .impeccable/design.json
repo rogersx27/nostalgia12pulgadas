@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-05T03:08:09.749Z",
+  "title": "Design System: Nostalgia 12\"",
+  "extensions": {
+    "colorMeta": {
+      "muro": {
+        "role": "neutral",
+        "displayName": "Earthen Plaster",
+        "canonical": "#d6d1c7",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#272520",
+          "#464139",
+          "#656158",
+          "#868279",
+          "#a9a49b",
+          "#ccc9c2",
+          "#efeeec"
+        ]
+      },
+      "nicho": {
+        "role": "neutral",
+        "displayName": "Alcove Plaster",
+        "canonical": "#c8c1b3",
+        "tonalRamp": [
+          "#0c0b09",
+          "#28251e",
+          "#474136",
+          "#676154",
+          "#888275",
+          "#aba497",
+          "#cdc9bf",
+          "#f0eeeb"
+        ]
+      },
+      "tinta": {
+        "role": "primary",
+        "displayName": "Indigo Ink",
+        "canonical": "#182f48",
+        "tonalRamp": [
+          "#080c10",
+          "#182636",
+          "#2c445e",
+          "#4b6380",
+          "#6b85a2",
+          "#8da8c7",
+          "#b9cbe0",
+          "#e9eff6"
+        ]
+      },
+      "tinta-suave": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#3c4f63",
+        "tonalRamp": [
+          "#090b0f",
+          "#1b2632",
+          "#314457",
+          "#506378",
+          "#70859b",
+          "#92a8be",
+          "#bccbdb",
+          "#eaeff4"
+        ]
+      },
+      "washi": {
+        "role": "neutral",
+        "displayName": "Washi",
+        "canonical": "#f0efe8",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#262522",
+          "#43423d",
+          "#62615b",
+          "#83827c",
+          "#a6a59f",
+          "#cac9c5",
+          "#efeeed"
+        ]
+      },
+      "montaje": {
+        "role": "primary",
+        "displayName": "Scroll Mounting Indigo",
+        "canonical": "#22374f",
+        "tonalRamp": [
+          "#080b0f",
+          "#192635",
+          "#2e445c",
+          "#4d637e",
+          "#6d85a0",
+          "#8fa8c5",
+          "#bacbdf",
+          "#eaeff5"
+        ]
+      },
+      "madera": {
+        "role": "neutral",
+        "displayName": "Dark Wood",
+        "canonical": "#2b211b",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#2a2320",
+          "#4a3f39",
+          "#6a5e57",
+          "#8c7f78",
+          "#afa29a",
+          "#d0c7c2",
+          "#f1eeec"
+        ]
+      },
+      "madera-luz": {
+        "role": "neutral",
+        "displayName": "Lit Wood",
+        "canonical": "#4a3a2d",
+        "tonalRamp": [
+          "#0d0b09",
+          "#2d231b",
+          "#4f3e31",
+          "#6f5d50",
+          "#917e70",
+          "#b4a192",
+          "#d4c6bc",
+          "#f2eeea"
+        ]
+      },
+      "madera-honda": {
+        "role": "neutral",
+        "displayName": "Deep Wood",
+        "canonical": "#17110d",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#282421",
+          "#48403c",
+          "#675f5a",
+          "#89807b",
+          "#aca39e",
+          "#cec8c4",
+          "#f0eeed"
+        ]
+      },
+      "kiri": {
+        "role": "neutral",
+        "displayName": "Paulownia",
+        "canonical": "#dacbb0",
+        "tonalRamp": [
+          "#0d0b08",
+          "#2b2416",
+          "#4d4029",
+          "#6d5f47",
+          "#8e8067",
+          "#b2a389",
+          "#d2c8b6",
+          "#f1eee9"
+        ]
+      },
+      "kiri-tinta": {
+        "role": "neutral",
+        "displayName": "Paulownia Ink",
+        "canonical": "#574632",
+        "tonalRamp": [
+          "#0d0b08",
+          "#2d2317",
+          "#4f3f2b",
+          "#705e49",
+          "#927f69",
+          "#b5a18b",
+          "#d4c7b8",
+          "#f2eee9"
+        ]
+      },
+      "bermellon": {
+        "role": "secondary",
+        "displayName": "Seal Vermilion",
+        "canonical": "#c0482f",
+        "tonalRamp": [
+          "#160604",
+          "#4c0400",
+          "#820000",
+          "#a93218",
+          "#d0573d",
+          "#f87b60",
+          "#ffb09d",
+          "#ffe7e1"
+        ]
+      },
+      "piedra": {
+        "role": "neutral",
+        "displayName": "Stone Grey",
+        "canonical": "#9a9090",
+        "tonalRamp": [
+          "#0c0b0b",
+          "#292424",
+          "#484040",
+          "#685f5f",
+          "#898080",
+          "#aca2a2",
+          "#cec7c7",
+          "#f0eeee"
+        ]
+      },
+      "muro-noche": {
+        "role": "neutral",
+        "displayName": "Night Plaster",
+        "canonical": "#2b2723",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#272522",
+          "#45413d",
+          "#65605c",
+          "#86817c",
+          "#a9a49f",
+          "#ccc8c5",
+          "#efeeed"
+        ]
+      },
+      "nicho-noche": {
+        "role": "neutral",
+        "displayName": "Night Alcove",
+        "canonical": "#221f1b",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#272522",
+          "#45413d",
+          "#64615c",
+          "#85827d",
+          "#a8a49f",
+          "#cbc9c5",
+          "#efeeed"
+        ]
+      },
+      "tinta-noche": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#ece6da",
+        "tonalRamp": [
+          "#0c0b0a",
+          "#28251f",
+          "#464138",
+          "#666156",
+          "#878277",
+          "#aaa499",
+          "#ccc9c1",
+          "#efeeec"
+        ]
+      },
+      "tinta-suave-noche": {
+        "role": "neutral",
+        "displayName": "Night Muted Ink",
+        "canonical": "#b5ab9d",
+        "tonalRamp": [
+          "#0c0b09",
+          "#29241d",
+          "#494135",
+          "#696053",
+          "#8a8173",
+          "#ada396",
+          "#cfc8bf",
+          "#f0eeeb"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Wordmark",
+        "purpose": "NOSTALGIA 12\" only."
+      },
+      "headline": {
+        "displayName": "Scroll Title",
+        "purpose": "Record title set vertically on the scroll, fitted to its length."
+      },
+      "statement": {
+        "displayName": "Condition Statement",
+        "purpose": "Disc and sleeve condition at title scale."
+      },
+      "title": {
+        "displayName": "Section Title",
+        "purpose": "Reading section names and the shelf heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default running text."
+      },
+      "body-story": {
+        "displayName": "Story",
+        "purpose": "The record description, max 34em."
+      },
+      "data": {
+        "displayName": "Data",
+        "purpose": "Fact sheet terms and values, tabular figures."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Controls and navigation."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Artist and year on box slips and lids."
+      }
+    },
+    "darkScheme": {
+      "selector": "@media (prefers-color-scheme: dark) :root:not([data-theme=\"light\"]), :root[data-theme=\"dark\"]",
+      "overrides": {
+        "--muro": "#2b2723",
+        "--nicho": "#221f1b",
+        "--tinta": "#ece6da",
+        "--tinta-suave": "#b5ab9d",
+        "--madera": "#120e0b",
+        "--madera-luz": "#2b2119",
+        "--madera-honda": "#070605",
+        "--kiri": "#c2b294",
+        "--sombra": "0 0 0"
+      },
+      "unchanged": [
+        "--washi",
+        "--tinta-rollo",
+        "--montaje",
+        "--kiri-tinta",
+        "--bermellon"
+      ]
+    },
+    "textures": [
+      {
+        "name": "grano",
+        "purpose": "Fine fractal-noise grain on plaster and washi only; never on wood."
+      },
+      {
+        "name": "seigaiha",
+        "purpose": "Indigo wave band with washi rings: scroll mounting bands (20x10px tile) and the footer top edge (40x20px tile, 24px tall)."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "post-cast",
+        "value": "6px 0 14px -6px rgb(34 24 16 / .5)",
+        "purpose": "Post onto the alcove."
+      },
+      {
+        "name": "alcove-recess",
+        "value": "inset 0 46px 50px -34px rgb(34 24 16 / .55), inset 34px 0 40px -34px rgb(34 24 16 / .4)",
+        "purpose": "The niche under lintel and post."
+      },
+      {
+        "name": "standing-object",
+        "value": "0 26px 30px -20px rgb(34 24 16 / .7), 0 2px 5px rgb(34 24 16 / .25)",
+        "purpose": "The upright sleeve."
+      },
+      {
+        "name": "hanging-object",
+        "value": "0 20px 26px -16px rgb(34 24 16 / .6)",
+        "purpose": "The scroll."
+      },
+      {
+        "name": "box-lid",
+        "value": "0 10px 16px -8px rgb(0 0 0 / .6)",
+        "purpose": "Paulownia lids on the dark shelf."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(.2, .8, .2, 1)",
+        "purpose": "Rising, unrolling and lid movement."
+      },
+      {
+        "name": "ease-sink",
+        "value": "cubic-bezier(.5, 0, .9, .4)",
+        "purpose": "Sinking into the dais and rolling up."
+      },
+      {
+        "name": "ease-stamp",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "The seal stamp."
+      },
+      {
+        "name": "lid-lift",
+        "value": ".45s",
+        "purpose": "Box lid hover and open."
+      },
+      {
+        "name": "piece-change",
+        "value": "sink .5s; rise .8-.9s delayed .45-.6s; seal .45s at 1.25s",
+        "purpose": "View Transition sequence; instant under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Speed Controls",
+      "kind": "button",
+      "refersTo": "speed-button",
+      "description": "Plain text buttons on the dais edge.",
+      "html": "<div class=\"ds-dais\"><button class=\"ds-speed\" aria-pressed=\"true\">33⅓</button><button class=\"ds-speed\">45</button><button class=\"ds-speed\">Detener</button></div>",
+      "css": ".ds-dais { display: flex; gap: 2px; padding: 12px 20px; background: linear-gradient(180deg, rgb(255 255 255 / .14) 0 1px, transparent 1px), linear-gradient(180deg, #4a3a2d, #2b211b 35%, #17110d); } .ds-speed { min-height: 40px; padding: 0 10px; background: none; border: 0; cursor: pointer; font: 500 14px \"Zen Kaku Gothic New\", sans-serif; letter-spacing: .06em; font-variant-numeric: tabular-nums; color: rgb(240 239 232 / .62); text-decoration: underline 1px transparent; text-underline-offset: .45em; transition: color .2s, text-decoration-color .2s; } .ds-speed:hover { color: #f0efe8; } .ds-speed[aria-pressed=\"true\"] { color: #f0efe8; text-decoration-color: currentColor; } .ds-speed:focus-visible { outline: 2px solid #f0efe8; outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Collection Box",
+      "kind": "card",
+      "refersTo": "box-lid",
+      "description": "Paulownia box with a washi slip; the lid lifts on hover.",
+      "html": "<div class=\"ds-shelf\"><a class=\"ds-box\" href=\"#\"><span class=\"ds-lid\"><span class=\"ds-slip\"><b>Rumours</b><span>Fleetwood Mac</span></span><span class=\"ds-date\">1977 · 48 años de espera</span></span></a></div>",
+      "css": ".ds-shelf { padding: 38px 24px 14px; background: #2b211b; } .ds-box { display: block; position: relative; width: 214px; height: 132px; text-decoration: none; color: #182f48; } .ds-lid { position: absolute; inset: 0; border-radius: 3px; background: linear-gradient(180deg, rgb(255 255 255 / .16), transparent 40%), #dacbb0; box-shadow: 0 10px 16px -8px rgb(0 0 0 / .6); transition: transform .45s cubic-bezier(.2, .8, .2, 1); } .ds-box:hover .ds-lid, .ds-box:focus-visible .ds-lid { transform: translateY(-5px); } .ds-box:focus-visible { outline: 2px solid #f0efe8; outline-offset: 3px; } .ds-slip { display: block; margin: 12px 14px 0; padding: 7px 10px 8px; background: #f0efe8; box-shadow: 0 1px 2px rgb(0 0 0 / .12); } .ds-slip b { display: block; font: 600 15px/1.25 \"Shippori Mincho\", serif; } .ds-slip span { display: block; margin-top: 2px; font: 500 11.5px/1.4 \"Zen Kaku Gothic New\", sans-serif; letter-spacing: .06em; color: #3c4f63; } .ds-date { position: absolute; left: 15px; bottom: 11px; font: 500 11.5px \"Zen Kaku Gothic New\", sans-serif; color: #574632; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Hanging Scroll",
+      "kind": "custom",
+      "refersTo": "scroll-paper",
+      "description": "Washi scroll in indigo mounting with vertical title, artist and the vermilion seal.",
+      "html": "<div class=\"ds-scroll\"><div class=\"ds-paper\"><h1>Rumours</h1><p>Fleetwood Mac</p><svg class=\"ds-seal\" viewBox=\"0 0 48 48\" aria-hidden=\"true\"><defs><mask id=\"ds-talla\"><rect width=\"48\" height=\"48\" fill=\"#fff\"/><text x=\"24\" y=\"33.5\" text-anchor=\"middle\" font-size=\"27\" font-weight=\"800\" font-family=\"Shippori Mincho, serif\">懐</text></mask></defs><rect x=\"3\" y=\"3\" width=\"42\" height=\"42\" rx=\"2.5\" fill=\"#c0482f\" mask=\"url(#ds-talla)\"/></svg></div></div>",
+      "css": ".ds-scroll { width: 150px; height: 340px; padding: 0 7px; display: flex; background: repeating-linear-gradient(45deg, rgb(255 255 255 / .03) 0 1px, transparent 1px 3px), #22374f; box-shadow: 0 20px 26px -16px rgb(34 24 16 / .6); } .ds-paper { flex: 1; margin: 22px 0 16px; position: relative; display: flex; flex-direction: row-reverse; justify-content: center; gap: 6px; padding: 20px 10px 90px; background: #f0efe8; color: #182f48; } .ds-paper h1 { writing-mode: vertical-rl; font: 800 52px/1.1 \"Shippori Mincho\", serif; letter-spacing: .04em; margin: 0; } .ds-paper p { writing-mode: vertical-rl; font: 500 14px/1.2 \"Zen Kaku Gothic New\", sans-serif; letter-spacing: .24em; color: #3c4f63; margin: 0; padding-top: 20px; } .ds-seal { position: absolute; left: 14%; bottom: 8%; width: 36px; transform: rotate(-3deg); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "label",
+      "description": "Wordmark with kanji and plain gothic links that underline on hover.",
+      "html": "<header class=\"ds-head\"><a class=\"ds-mark\" href=\"#\"><b>NOSTALGIA 12\"</b><small lang=\"ja\">懐かしい</small></a><nav class=\"ds-nav\"><a href=\"#\">La colección</a><a href=\"#\">Instagram</a></nav></header>",
+      "css": ".ds-head { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 32px; background: #d6d1c7; color: #182f48; } .ds-mark { color: inherit; text-decoration: none; } .ds-mark b { display: block; font: 400 15px/1.2 Michroma, sans-serif; letter-spacing: .3em; } .ds-mark small { display: block; margin-top: 3px; font: 400 12px/1.4 \"Shippori Mincho\", serif; letter-spacing: .5em; color: #3c4f63; } .ds-nav { display: flex; gap: 28px; font: 500 14px \"Zen Kaku Gothic New\", sans-serif; letter-spacing: .04em; } .ds-nav a { color: inherit; text-underline-offset: .3em; text-decoration-thickness: 1px; text-decoration-color: transparent; transition: text-decoration-color .2s; } .ds-nav a:hover { text-decoration-color: currentColor; } .ds-nav a:focus-visible, .ds-mark:focus-visible { outline: 2px solid #182f48; outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Footer",
+      "kind": "custom",
+      "refersTo": "footer",
+      "description": "Indigo ground under a seigaiha band.",
+      "html": "<footer class=\"ds-foot\"><p class=\"ds-lema\">Re-conectamos música con personas.</p><p>Medellín · <a href=\"#\">Instagram</a></p></footer>",
+      "css": ".ds-foot { position: relative; padding: 64px 32px 56px; background: #182f48; color: #f0efe8; font: 400 15px/1.7 \"Zen Kaku Gothic New\", sans-serif; } .ds-foot::before { content: \"\"; position: absolute; inset: 0 0 auto; height: 24px; background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20'%3E%3Cdefs%3E%3Cg id='s'%3E%3Ccircle r='20' fill='%23182f48'/%3E%3Ccircle r='16.5' fill='none' stroke='%23f0efe8' stroke-opacity='.55' stroke-width='1.3'/%3E%3Ccircle r='12.5' fill='none' stroke='%23f0efe8' stroke-opacity='.55' stroke-width='1.3'/%3E%3Ccircle r='8.5' fill='none' stroke='%23f0efe8' stroke-opacity='.55' stroke-width='1.3'/%3E%3Ccircle r='4.5' fill='none' stroke='%23f0efe8' stroke-opacity='.55' stroke-width='1.3'/%3E%3C/g%3E%3C/defs%3E%3Cuse href='%23s' x='0' y='0'/%3E%3Cuse href='%23s' x='40' y='0'/%3E%3Cuse href='%23s' x='20' y='10'/%3E%3Cuse href='%23s' x='0' y='20'/%3E%3Cuse href='%23s' x='40' y='20'/%3E%3C/svg%3E\") 0 0 / 40px 20px; } .ds-lema { font: 600 32px/1.3 \"Shippori Mincho\", serif; margin: 12px 0 14px; } .ds-foot a { color: inherit; text-underline-offset: .3em; text-decoration-thickness: 1px; } .ds-foot a:hover { text-decoration-thickness: 2px; } .ds-foot a:focus-visible { outline: 2px solid #f0efe8; outline-offset: 3px; }"
+    },
+    {
+      "name": "Owner Field",
+      "kind": "input",
+      "refersTo": "input-owner",
+      "description": "Washi text field in the QR owner tool.",
+      "html": "<label class=\"ds-label\">Dirección de la página del disco<input class=\"ds-input\" type=\"url\" value=\"https://example.org/vinilo.html\"></label>",
+      "css": ".ds-label { display: block; font: 500 14px \"Zen Kaku Gothic New\", sans-serif; color: #182f48; } .ds-input { display: block; width: 100%; margin-top: 6px; padding: 12px 14px; font: 400 15px \"Zen Kaku Gothic New\", sans-serif; border: 1px solid #3c4f63; border-radius: 4px; background: #f0efe8; color: #182f48; } .ds-input:focus-visible { outline: 2px solid #182f48; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Tokonoma",
+    "overview": "The site is a quiet room, not a shop. A grey earthen plaster wall fills the screen; a dark wood post and lintel frame an alcove; on its polished dais one record stands upright beside its sleeve, and a washi hanging scroll names it in large vertical ink. Beneath, the collection rests on a shelf as paulownia boxes with paper slips. Everything visible is a material from that room, rendered flat and lit softly from the upper left.\n\nDensity is low and unhurried. One piece is shown at a time; the reading below it is ordered by scale alone, separated by deep silences rather than cards, rules or borders. Indigo ink carries all text. Vermilion appears once, as the seal on the scroll. Japanese material culture is the brand's identity, not a claim about the records, so nothing imitates Japanese pressing artefacts such as obi strips.",
+    "keyCharacteristics": [
+      "Earthen plaster ground with a fine paper/plaster grain; wood is flat tone, never imitation grain.",
+      "Indigo ink for all text; vermilion only as the seal.",
+      "Three faces with fixed jobs: Michroma for the wordmark, Shippori Mincho for titles, body and the scroll, Zen Kaku Gothic New for data and labels.",
+      "Hierarchy by scale and silence, with no cards or borders in the reading.",
+      "Changing pieces is a ritual: sink, roll up, rise, unroll, stamp."
+    ],
+    "rules": [
+      {
+        "name": "The One Seal Rule",
+        "body": "Vermilion is the seal and nothing else: no vermilion links, buttons, highlights or rules.",
+        "section": "colors"
+      },
+      {
+        "name": "The Paper Keeps Its Ink Rule",
+        "body": "Anything printed on washi or paulownia keeps indigo ink and muted ink at their light values in both schemes; only the wall, the alcove and free text flip.",
+        "section": "colors"
+      },
+      {
+        "name": "The Warm Shadow Rule",
+        "body": "Shadows are tinted with warm umber (rgb 34 24 16) in light mode and pure black at night, never neutral grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Voices Rule",
+        "body": "Michroma is the wordmark and nothing else. Every title, sentence and the scroll are mincho. Every number, grade term, control and label is gothic.",
+        "section": "typography"
+      },
+      {
+        "name": "The Vertical Scroll Rule",
+        "body": "Text on the scroll is set with vertical writing mode, title on the right, artist to its left.",
+        "section": "typography"
+      },
+      {
+        "name": "The Cast Shadow Rule",
+        "body": "Shadows are long, soft and offset downward with negative spread; no hard offset shadows and no ambient glows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set all text in indigo ink, and text on wood or the footer in washi.",
+      "Do keep wood as flat tonal gradients between the three wood stops.",
+      "Do give flaws and grades the same scale as the title (statement type, up to 50px).",
+      "Do separate reading sections with silence (clamp 120px to 200px), not with lines or cards.",
+      "Do carry the warm umber shadow tint and the upper-left light.",
+      "Do make piece changes instant under prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't use vermilion for anything but the seal.",
+      "Don't imitate wood grain on wood surfaces.",
+      "Don't use Michroma outside the wordmark.",
+      "Don't put the reading in cards, bordered panels or grids of square covers.",
+      "Don't add obi strips or other devices that imply Japanese pressings."
+    ]
+  }
+}

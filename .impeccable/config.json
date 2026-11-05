@@ -1,0 +1,71 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "qr.html"
+        ],
+        "createdAt": "2026-11-05T02:53:45.679Z",
+        "reason": "Claude triage: the detector pairs the dark-mode text tokens with a white ground; in dark mode the page ground is #1d242d and @media print forces light tokens"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          ".impeccable/mocks/decision/challenger-pulp.html"
+        ],
+        "createdAt": "2026-11-05T02:54:29.940Z",
+        "reason": "Claude triage: unchosen decision-round sketch, not shipped; its pulp-stock ground came from the dealt challenger's grammar"
+      },
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-11-05T02:54:30.243Z",
+        "reason": "Claude triage: canon decision sketch deliberately shows the category standard; not shipped"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "georgia",
+        "files": [
+          ".impeccable/mocks/decision/assigned.html"
+        ],
+        "createdAt": "2026-11-05T03:08:58.986Z",
+        "reason": "Claude triage: decision-round skeleton sketch, not shipped; drawn before the type system existed"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "georgia",
+        "files": [
+          ".impeccable/mocks/decision/model-pick.html"
+        ],
+        "createdAt": "2026-11-05T03:08:59.276Z",
+        "reason": "Claude triage: decision-round skeleton sketch, not shipped; drawn before the type system existed"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "impact",
+        "files": [
+          ".impeccable/mocks/decision/challenger-pulp.html"
+        ],
+        "createdAt": "2026-11-05T03:08:59.550Z",
+        "reason": "Claude triage: decision-round skeleton sketch, not shipped; drawn before the type system existed"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "arial",
+        "files": [
+          ".impeccable/mocks/decision/canon.html"
+        ],
+        "createdAt": "2026-11-05T03:08:59.827Z",
+        "reason": "Claude triage: decision-round skeleton sketch, not shipped; drawn before the type system existed"
+      }
+    ]
+  }
+}
